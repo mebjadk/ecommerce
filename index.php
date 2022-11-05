@@ -40,9 +40,15 @@ transform: scaleX(1);
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2980B9;">
    <div class="container-fluid">
   <a class="navbar-brand" href="index.php">
-    <img src="./admin/images/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
+    <img src="./admin/images/logo.png" width="40" height="40" class="d-inline-block align-top" alt="" style="border-radius:50%;">
     Online Fancy Stores
   </a>
+  <?php
+  if(isset($_SESSION['userlogin']))
+  {
+    echo $_SESSION['userlogin'];
+  }
+  ?>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -107,6 +113,30 @@ transform: scaleX(1);
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     -->
+    <script>
+      function initMap() {
+  // The location of Uluru
+  const uluru = { lat: -25.344, lng: 131.031 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+
+window.initMap = initMap;
+
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+
   </body>
   <br> <br>
   <?php

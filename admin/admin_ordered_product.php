@@ -55,6 +55,7 @@ function getproductname(int $pid) {
                 <h4>Grand Total: </h4>
                 <h5> <?php echo $total; ?></h5>
                 <hr>
+                <a href="#" class="btn btn-secondary">Print Bill</a>
                 <a href="index.php?page=ship_order&orderid=<?php echo $_GET['orderid']; ?>" class="btn btn-primary">Ship Order</a>
             </div>
         </div>

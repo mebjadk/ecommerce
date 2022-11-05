@@ -18,8 +18,8 @@ if (isset($_POST['mail']))
 	<br><br>
 <div class="container" style="padding: 5px;">
 		<div class="row">
-			<div class="col-md-6">
-				<img src="./admin/images/slider2.jpg" alt="" class="img-fluid" style="height: 450px; width:100%; border-radius: 5px; opacity: 0.4;">
+			<div id="map" class="col-md-6">
+	
 			</div>
 			<div class="col-md-6">
             <form action='index.php?page=pages/contact' method='post' style="background-color: lightgoldenrodyellow; padding: 5px; border-radius: 5px;">
