@@ -5,7 +5,9 @@
 
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-<footer>
+<?php
+$className=$page=='pages/cart.php'?'fixed-bottom':'';
+echo "<footer class=\"$className\"/>\n";?>
      <div class="container-fluid py-3" style="background-color: #2980B9; opacity: 0.7;">
         <div class="container">
           <div class="row">

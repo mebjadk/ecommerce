@@ -6,7 +6,7 @@ if (!isset($_SESSION['name'])){
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<title>admin panel</title>
+<title>Admin Panel</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -28,7 +28,7 @@ if (!isset($_SESSION['name'])){
 <div style="margin-left:25%">
 
 <div class="w3-container w3-black">
-  <h1>Dairy Products</h1>
+  <h1>Online Fancy Stores</h1>
 </div>
 
 <div class="w3-container">
